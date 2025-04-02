@@ -4,76 +4,95 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Levi's Grad Trip AZ</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-900">
-  <div class="max-w-4xl mx-auto p-6">
-    <header class="mb-8">
-      <h1 class="text-4xl font-bold text-center mb-2">Levi's Graduation Trip Tracker</h1>
-      <p class="text-center text-lg text-gray-600">Tucson, AZ</p>
-    </header>
+<body class="bg-black text-gray-100">
+  <!-- Navigation -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-black bg-opacity-90 shadow-md">
+    <div class="text-xl font-semibold">Levi's Grad Trip</div>
+    <a href="altpage.html" class="text-gray-300 hover:text-white transition">Alternate Page</a>
+  </nav>
 
-    <!-- Details Section -->
-    <section class="mb-10">
-      <h2 class="text-center text-2xl font-semibold mb-4">Trip Details</h2>
-      <div class="bg-white p-4 rounded-xl shadow">
-        <p><strong>Destination:</strong> University of Arizona Football Stadium <a href="https://maps.apple.com/?address=545%20N%20National%20Championship%20Dr,%20Tucson,%20AZ%2085719,%20United%20States&auid=4356205480139508305&ll=32.228833,-110.948830&lsp=9902&q=Arizona%20Stadium&_ext=CjkKBQgEEOIBCgQIBRADCgQIBhAVCgQIChAACgQIUhAICgQIVRAMCgQIWRACCgUIpAEQAQoFCMEBEAESJCna+F0iKB1AQDEgPlUqzbxbwDmsfIW7aR1AQEGqQ26Gm7xbwA%3D%3D" target="_blank" style="color: blue; text-decoration: underline;"> Directions </a></p>
+  <!-- Hero Section -->
+  <header class="relative h-screen flex items-center justify-center fade-in" style="background: url('pexels-yigithan02-764998.jpg') no-repeat center center / cover;">
+    <div class="bg-black bg-opacity-60 p-6 rounded-xl text-center">
+      <h1 class="text-4xl font-bold mb-4">Levi's Graduation Trip Tracker</h1>
+      <p class="text-xl text-gray-300">Tucson, AZ</p>
+    </div>
+  </header>
+
+  <!-- Portrait Section -->
+  <section class="fade-in py-12 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <img src="50407118_00802_0529_XLarge 2.JPG" alt="Portrait of Levi" class="mx-auto rounded-2xl shadow-lg w-60 h-auto object-cover mb-6">
+    </div>
+  </section>
+
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-16">
+    <!-- Trip Details -->
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold text-center mb-6">Trip Details</h2>
+      <div class="bg-gray-900 p-6 rounded-xl shadow">
+        <p><strong>Destination:</strong> University of Arizona Football Stadium <a href="https://maps.apple.com/?address=545%20N%20National%20Championship%20Dr,%20Tucson,%20AZ%2085719,%20United%20States&auid=4356205480139508305&ll=32.228833,-110.948830&lsp=9902&q=Arizona%20Stadium&_ext=CjkKBQgEEOIBCgQIBRADCgQIBhAVCgQIChAACgQIUhAICgQIVRAMCgQIWRACCgUIpAEQAQoFCMEBEAESJCna+F0iKB1AQDEgPlUqzbxbwDmsfIW7aR1AQEGqQ26Gm7xbwA%3D%3D" class="text-blue-400 underline" target="_blank">Directions</a></p>
         <p><strong>Date:</strong> 16 May 2025 @ 7:30pm</p>
-        <p><strong>Organizer:</strong> Shaffon (Traveling Agent) <a href="sms:+19162541277" style="color: blue; text-decoration: underline;">Text</a> Justen (Local Guide) <a href="sms:+19102296549" style="color: blue; text-decoration: underline;">Text</a></p>
-        <p><strong>Event Info:</strong> <a href="https://commencement.arizona.edu/guests" target="_blank" style="color: blue; text-decoration: underline;"> University Website</a></p>
+        <p><strong>Organizer:</strong> Shaffon <a href="sms:+19162541277" class="text-blue-400 underline">Text</a> & Justen <a href="sms:+19102296549" class="text-blue-400 underline">Text</a></p>
+        <p><strong>Event Info:</strong> <a href="https://commencement.arizona.edu/guests" class="text-blue-400 underline" target="_blank">University Website</a></p>
       </div>
     </section>
 
-    <!-- Flights Section -->
-    <section class="mb-10">
-      <h2 class="text-center text-2xl font-semibold mb-4">Flights</h2>
-      <div class="bg-white p-4 rounded-xl shadow space-y-2">
-        <p><strong>Airline:</strong> American Airlines <a href="https://www.aa.com" target="_blank" style="color: blue; text-decoration: underline;"> Website </a></p>
-        <p><strong>Departing Flight Details:</strong></p>
-        <p>Sacramento to Phoenix - AA 1867 - Departing 16 May 2025 @ 5:40am - Arriving 16 May 2025 @ 7:35am</p>
-        <p>Phoenix to Sacramento - AA 1799 - Departing 18 May 2025 @ 4:36pm - Arriving 18 May 2025 @ 6:35pm</p>
+    <!-- Flights -->
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold text-center mb-6">Flights</h2>
+      <div class="bg-gray-900 p-6 rounded-xl shadow space-y-3">
+        <p><strong>Airline:</strong> American Airlines <a href="https://www.aa.com" class="text-blue-400 underline" target="_blank">Website</a></p>
+        <p><strong>Departing Flight:</strong> Sacramento to Phoenix - AA 1867 - 16 May 2025 @ 5:40am, Arrives 7:35am</p>
+        <p><strong>Returning Flight:</strong> Phoenix to Sacramento - AA 1799 - 18 May 2025 @ 4:36pm, Arrives 6:35pm</p>
         <p><strong>Confirmation Number:</strong> NSABBJ</p>
       </div>
     </section>
 
-      <!-- Hotels Section -->
-      <section class="mb-10">
-        <h2 class="text-center text-2xl font-semibold mb-4">Hotel</h2>
-        <div class="bg-white p-4 rounded-xl shadow space-y-2">
-          <p><strong>Hotel Name:</strong> La Posada Lodge & Casitas, Ascend Hotel Collection <a href="https://www.choicehotels.com/arizona/tucson/ascend-hotels/az389?cph=undefined&pi=X6PVZhoVk-hjMqF2x3MUxWgGXHMNpAaxJaFLVG05y7s&source=EMCHRES&tp=i-16EB-Iu-6Xp-ZkXyW5-1o-7UT6Z-1c-RgpD-lBfeS2ZES1-27uazF" target="_blank" style="color: blue; text-decoration: underline;"> Website</a></p>
-          <p><strong>Check-in:</strong> 16 May 2025 @ 3:00pm</p>
-          <p><strong>Check-out:</strong> 18 May 2025 @ 11:00am</p>
-          <p><strong>Address:</strong><br>
-            5900 North Oracle Road<br>
-            Tucson, Arizona 85704<br>
-            <a href="https://maps.apple.com/?address=5900%20N%20Oracle%20Rd,%20Tucson,%20AZ%20%2085704,%20United%20States&ll=32.313724,-110.976901&q=5900%20N%20Oracle%20Rd&_ext=EiYpIRM66pQnQEAxbqOzndy+W8A5n+hfRrsoQEBB1FRTdy6+W8BQAw%3D%3D" target="_blank" style="color: blue; text-decoration: underline;"> Directions </a></p>
-            <p><strong>Confirmation Number:</strong> 41247421 </p>
-        </div>
-      </section>
+    <!-- Hotel -->
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold text-center mb-6">Hotel</h2>
+      <div class="bg-gray-900 p-6 rounded-xl shadow">
+        <p><strong>Hotel Name:</strong> La Posada Lodge & Casitas <a href="https://www.choicehotels.com/arizona/tucson/ascend-hotels/az389" class="text-blue-400 underline" target="_blank">Website</a></p>
+        <p><strong>Check-in:</strong> 16 May 2025 @ 3:00pm</p>
+        <p><strong>Check-out:</strong> 18 May 2025 @ 11:00am</p>
+        <p><strong>Address:</strong> 5900 North Oracle Road, Tucson, AZ 85704 <a href="https://maps.apple.com/?address=5900%20N%20Oracle%20Rd,%20Tucson,%20AZ%20%2085704,%20United%20States&ll=32.313724,-110.976901&q=5900%20N%20Oracle%20Rd&_ext=EiYpIRM66pQnQEAxbqOzndy+W8A5n+hfRrsoQEBB1FRTdy6+W8BQAw%3D%3D" class="text-blue-400 underline" target="_blank">Directions</a></p>
+        <p><strong>Confirmation Number:</strong> 41247421</p>
+      </div>
+    </section>
 
-
-    <!-- Itinerary Section -->
-    <section class="mb-10">
-      <h2 class="text-center text-2xl font-semibold mb-4">Things to Consider</h2>
-      <div class="bg-white p-4 rounded-xl shadow space-y-4">
-        <div>
-          <p>Tucson is hot in mid-May, with average temperatures in the low 90s°F. Be sure to bring comfortable clothes for walking, and don’t forget a swimsuit if you plan on swimming!
-            There are plenty of great food options around, and your hotel is conveniently located near the mall, which has a variety of restaurants to choose from.</p>
-        </div>
+    <!-- Itinerary -->
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold text-center mb-6">Things to Consider</h2>
+      <div class="bg-gray-900 p-6 rounded-xl shadow">
+        <p>Tucson in May averages in the 90s°F. Pack comfortable walking clothes and a swimsuit. Plenty of dining options and a mall near your hotel make food and shopping easy!</p>
       </div>
     </section>
 
     <!-- Balance Tracker -->
-    <section>
-      <h2 class="text-center text-2xl font-semibold mb-4">Balance Tracker</h2>
-      <div class="bg-white p-4 rounded-xl shadow overflow-x-auto">
-        <table class="table-auto w-full">
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold text-center mb-6">Balance Tracker</h2>
+      <div class="bg-gray-900 p-6 rounded-xl shadow overflow-x-auto">
+        <table class="table-auto w-full text-left">
           <thead>
-            <tr class="bg-gray-200">
-              <th class="px-4 py-2 text-left">Name</th>
-              <th class="px-4 py-2 text-left">Paid</th>
-              <th class="px-4 py-2 text-left">Owes</th>
-              <th class="px-4 py-2 text-left">To</th>
+            <tr class="bg-gray-700">
+              <th class="px-4 py-2">Name</th>
+              <th class="px-4 py-2">Paid</th>
+              <th class="px-4 py-2">Owes</th>
+              <th class="px-4 py-2">To</th>
             </tr>
           </thead>
           <tbody>
@@ -101,13 +120,23 @@
               <td class="border px-4 py-2">$360</td>
               <td class="border px-4 py-2">Shaffon ($75) & Levi ($285)</td>
             </tr>
-            <!-- Add more rows as needed -->
           </tbody>
         </table>
+      </div>
     </section>
-    </div>
-    <div><a href="altpage.html">Go to Alternate Page</a>
-    </div>
-  </div>
+  </main>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
