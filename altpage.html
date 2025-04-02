@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Levi's Grad Trip AZ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-black text-gray-100">
+  <!-- Navigation -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-black bg-opacity-90 shadow-md">
+    <div class="text-xl font-semibold">Levi's Grad Trip</div>
+    <a href="altpage.html" class="text-gray-300 hover:text-white transition">Alternate Page</a>
+  </nav>
 
+  <!-- Hero Section -->
+  <header class="relative h-screen flex items-center justify-center fade-in" style="background: url('pexels-yigithan02-764998.jpg') no-repeat center center / cover;">
+    <div class="bg-black bg-opacity-60 p-6 rounded-xl text-center">
+      <h1 class="text-4xl font-bold mb-4">Levi's Graduation Trip Tracker</h1>
+      <p class="text-xl text-gray-300">Tucson, AZ</p>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-16">
+    <!-- Trip Details -->
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold text-center mb-6">Trip Details</h2>
+      <div class="bg-gray-900 p-6 rounded-xl shadow">
+        <p><strong>Destination:</strong> University of Arizona Football Stadium <a href="https://maps.apple.com/?address=545%20N%20National%20Championship%20Dr,%20Tucson,%20AZ%2085719,%20United%20States&auid=4356205480139508305&ll=32.228833,-110.948830&lsp=9902&q=Arizona%20Stadium&_ext=CjkKBQgEEOIBCgQIBRADCgQIBhAVCgQIChAACgQIUhAICgQIVRAMCgQIWRACCgUIpAEQAQoFCMEBEAESJCna+F0iKB1AQDEgPlUqzbxbwDmsfIW7aR1AQEGqQ26Gm7xbwA%3D%3D" class="text-blue-400 underline" target="_blank">Directions</a></p>
+        <p><strong>Date:</strong> 16 May 2025 @ 7:30pm</p>
+        <p><strong>Organizer:</strong> Shaffon <a href="sms:+19162541277" class="text-blue-400 underline">Text</a> & Justen <a href="sms:+19102296549" class="text-blue-400 underline">Text</a></p>
+        <p><strong>Event Info:</strong> <a href="https://commencement.arizona.edu/guests" class="text-blue-400 underline" target="_blank">University Website</a></p>
+      </div>
+    </section>
+
+    <!-- Flights -->
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold text-center mb-6">Flights</h2>
+      <div class="bg-gray-900 p-6 rounded-xl shadow space-y-3">
+        <p><strong>Airline:</strong> American Airlines <a href="https://www.aa.com" class="text-blue-400 underline" target="_blank">Website</a></p>
+        <p><strong>Departing Flight:</strong> Sacramento to Phoenix - AA 1867 - 16 May 2025 @ 5:40am, Arrives 7:35am</p>
+        <p><strong>Returning Flight:</strong> Phoenix to Sacramento - AA 1799 - 18 May 2025 @ 4:36pm, Arrives 6:35pm</p>
+        <p><strong>Confirmation Number:</strong> NSABBJ</p>
+      </div>
+    </section>
+
+    <!-- Hotel -->
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold text-center mb-6">Hotel</h2>
+      <div class="bg-gray-900 p-6 rounded-xl shadow">
+        <p><strong>Hotel Name:</strong> La Posada Lodge & Casitas <a href="https://www.choicehotels.com/arizona/tucson/ascend-hotels/az389" class="text-blue-400 underline" target="_blank">Website</a></p>
+        <p><strong>Check-in:</strong> 16 May 2025 @ 3:00pm</p>
+        <p><strong>Check-out:</strong> 18 May 2025 @ 11:00am</p>
+        <p><strong>Address:</strong> 5900 North Oracle Road, Tucson, AZ 85704 <a href="https://maps.apple.com/?address=5900%20N%20Oracle%20Rd,%20Tucson,%20AZ%20%2085704,%20United%20States&ll=32.313724,-110.976901&q=5900%20N%20Oracle%20Rd&_ext=EiYpIRM66pQnQEAxbqOzndy+W8A5n+hfRrsoQEBB1FRTdy6+W8BQAw%3D%3D" class="text-blue-400 underline" target="_blank">Directions</a></p>
+        <p><strong>Confirmation Number:</strong> 41247421</p>
+      </div>
+    </section>
+
+    <!-- Itinerary -->
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold text-center mb-6">Things to Consider</h2>
+      <div class="bg-gray-900 p-6 rounded-xl shadow">
+        <p>Tucson in May averages in the 90s°F. Pack comfortable walking clothes and a swimsuit. Plenty of dining options and a mall near your hotel make food and shopping easy!</p>
+      </div>
+    </section>
+
+    <!-- Balance Tracker -->
+    <section class="fade-in">
+      <h2 class="text-3xl font-semibold text-center mb-6">Balance Tracker</h2>
+      <div class="bg-gray-900 p-6 rounded-xl shadow overflow-x-auto">
+        <table class="table-auto w-full text-left">
+          <thead>
+            <tr class="bg-gray-700">
+              <th class="px-4 py-2">Name</th>
+              <th class="px-4 py-2">Paid</th>
+              <th class="px-4 py-2">Owes</th>
+              <th class="px-4 py-2">To</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border px-4 py-2">Shaffon</td>
+              <td class="border px-4 py-2">$360</td>
+              <td class="border px-4 py-2">$0</td>
+              <td class="border px-4 py-2"></td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">Grandma Joyce</td>
+              <td class="border px-4 py-2">$360</td>
+              <td class="border px-4 py-2">$0</td>
+              <td class="border px-4 py-2"></td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">Pops</td>
+              <td class="border px-4 py-2"></td>
+              <td class="border px-4 py-2">$360</td>
+              <td class="border px-4 py-2">Shaffon ($75) & Levi ($285)</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">Mom</td>
+              <td class="border px-4 py-2"></td>
+              <td class="border px-4 py-2">$360</td>
+              <td class="border px-4 py-2">Shaffon ($75) & Levi ($285)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
