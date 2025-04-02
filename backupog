@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Levi's Grad Trip AZ</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <div class="max-w-4xl mx-auto p-6">
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold text-center mb-2">Levi's Graduation Trip Tracker</h1>
+      <p class="text-center text-lg text-gray-600">Tucson, AZ</p>
+    </header>
+
+    <!-- Details Section -->
+    <section class="mb-10">
+      <h2 class="text-center text-2xl font-semibold mb-4">Trip Details</h2>
+      <div class="bg-white p-4 rounded-xl shadow">
+        <p><strong>Destination:</strong> University of Arizona Football Stadium <a href="https://maps.apple.com/?address=545%20N%20National%20Championship%20Dr,%20Tucson,%20AZ%2085719,%20United%20States&auid=4356205480139508305&ll=32.228833,-110.948830&lsp=9902&q=Arizona%20Stadium&_ext=CjkKBQgEEOIBCgQIBRADCgQIBhAVCgQIChAACgQIUhAICgQIVRAMCgQIWRACCgUIpAEQAQoFCMEBEAESJCna+F0iKB1AQDEgPlUqzbxbwDmsfIW7aR1AQEGqQ26Gm7xbwA%3D%3D" target="_blank" style="color: blue; text-decoration: underline;"> Directions </a></p>
+        <p><strong>Date:</strong> 16 May 2025 @ 7:30pm</p>
+        <p><strong>Organizer:</strong> Shaffon (Traveling Agent) <a href="sms:+19162541277" style="color: blue; text-decoration: underline;">Text</a> Justen (Local Guide) <a href="sms:+19102296549" style="color: blue; text-decoration: underline;">Text</a></p>
+        <p><strong>Event Info:</strong> <a href="https://commencement.arizona.edu/guests" target="_blank" style="color: blue; text-decoration: underline;"> University Website</a></p>
+      </div>
+    </section>
+
+    <!-- Flights Section -->
+    <section class="mb-10">
+      <h2 class="text-center text-2xl font-semibold mb-4">Flights</h2>
+      <div class="bg-white p-4 rounded-xl shadow space-y-2">
+        <p><strong>Airline:</strong> American Airlines <a href="https://www.aa.com" target="_blank" style="color: blue; text-decoration: underline;"> Website </a></p>
+        <p><strong>Departing Flight Details:</strong></p>
+        <p>Sacramento to Phoenix - AA 1867 - Departing 16 May 2025 @ 5:40am - Arriving 16 May 2025 @ 7:35am</p>
+        <p>Phoenix to Sacramento - AA 1799 - Departing 18 May 2025 @ 4:36pm - Arriving 18 May 2025 @ 6:35pm</p>
+        <p><strong>Confirmation Number:</strong> NSABBJ</p>
+      </div>
+    </section>
+
+      <!-- Hotels Section -->
+      <section class="mb-10">
+        <h2 class="text-center text-2xl font-semibold mb-4">Hotel</h2>
+        <div class="bg-white p-4 rounded-xl shadow space-y-2">
+          <p><strong>Hotel Name:</strong> La Posada Lodge & Casitas, Ascend Hotel Collection <a href="https://www.choicehotels.com/arizona/tucson/ascend-hotels/az389?cph=undefined&pi=X6PVZhoVk-hjMqF2x3MUxWgGXHMNpAaxJaFLVG05y7s&source=EMCHRES&tp=i-16EB-Iu-6Xp-ZkXyW5-1o-7UT6Z-1c-RgpD-lBfeS2ZES1-27uazF" target="_blank" style="color: blue; text-decoration: underline;"> Website</a></p>
+          <p><strong>Check-in:</strong> 16 May 2025 @ 3:00pm</p>
+          <p><strong>Check-out:</strong> 18 May 2025 @ 11:00am</p>
+          <p><strong>Address:</strong><br>
+            5900 North Oracle Road<br>
+            Tucson, Arizona 85704<br>
+            <a href="https://maps.apple.com/?address=5900%20N%20Oracle%20Rd,%20Tucson,%20AZ%20%2085704,%20United%20States&ll=32.313724,-110.976901&q=5900%20N%20Oracle%20Rd&_ext=EiYpIRM66pQnQEAxbqOzndy+W8A5n+hfRrsoQEBB1FRTdy6+W8BQAw%3D%3D" target="_blank" style="color: blue; text-decoration: underline;"> Directions </a></p>
+            <p><strong>Confirmation Number:</strong> 41247421 </p>
+        </div>
+      </section>
+
+
+    <!-- Itinerary Section -->
+    <section class="mb-10">
+      <h2 class="text-center text-2xl font-semibold mb-4">Things to Consider</h2>
+      <div class="bg-white p-4 rounded-xl shadow space-y-4">
+        <div>
+          <p>Tucson is hot in mid-May, with average temperatures in the low 90s°F. Be sure to bring comfortable clothes for walking, and don’t forget a swimsuit if you plan on swimming!
+            There are plenty of great food options around, and your hotel is conveniently located near the mall, which has a variety of restaurants to choose from.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Balance Tracker -->
+    <section>
+      <h2 class="text-center text-2xl font-semibold mb-4">Balance Tracker</h2>
+      <div class="bg-white p-4 rounded-xl shadow overflow-x-auto">
+        <table class="table-auto w-full">
+          <thead>
+            <tr class="bg-gray-200">
+              <th class="px-4 py-2 text-left">Name</th>
+              <th class="px-4 py-2 text-left">Paid</th>
+              <th class="px-4 py-2 text-left">Owes</th>
+              <th class="px-4 py-2 text-left">To</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border px-4 py-2">Shaffon</td>
+              <td class="border px-4 py-2">$360</td>
+              <td class="border px-4 py-2">$0</td>
+              <td class="border px-4 py-2"></td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">Grandma Joyce</td>
+              <td class="border px-4 py-2">$360</td>
+              <td class="border px-4 py-2">$0</td>
+              <td class="border px-4 py-2"></td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">Pops</td>
+              <td class="border px-4 py-2"></td>
+              <td class="border px-4 py-2">$360</td>
+              <td class="border px-4 py-2">Shaffon ($75) & Levi ($285)</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">Mom</td>
+              <td class="border px-4 py-2"></td>
+              <td class="border px-4 py-2">$360</td>
+              <td class="border px-4 py-2">Shaffon ($75) & Levi ($285)</td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+    </section>
+    </div>
+    <div><a href="altpage.html">Go to Alternate Page</a>
+    </div>
+  </div>
+</body>
+</html>
